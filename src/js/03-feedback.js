@@ -53,7 +53,12 @@ function handleSubmit(event) {
 
     const dataToConsole = localStorage.getItem("feedback-form-state");
 
-    console.log(dataToConsole);
+    if (email.value === "" || message.value === "") {
+        return alert("Proszę uzupełnić wymagane pola.")
+    } else {
+        console.log(dataToConsole);
+    }
+
     localStorage.removeItem("feedback-form-state");
     event.currentTarget.reset();
 }; 
