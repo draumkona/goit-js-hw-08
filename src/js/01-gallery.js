@@ -20,4 +20,4 @@ gallery.insertAdjacentHTML("afterbegin", galleryOfObjects);
 var lightbox = new SimpleLightbox('.gallery a', {
     captionsData: "alt",
     captionDelay: "250",
- });
+ }); //working
